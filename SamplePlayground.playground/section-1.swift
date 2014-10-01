@@ -118,10 +118,10 @@ class TrigonometricFunction {
 var t = TrigonometricFunction()
 
 let PI = 3.141
-t.sin(PI / 2)
-t.cos(PI / 2)
+t.sin(PI / 2) // 0.999999956095259
+t.cos(PI / 2) // 0.00029632670556489
 
-t.expo(1)
+t.expo(1) // 2.7 
 
 
 
