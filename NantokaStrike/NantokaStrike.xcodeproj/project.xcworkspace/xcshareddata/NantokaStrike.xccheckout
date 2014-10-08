@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8DBCF038-B4B1-458F-8948-4DC0EB26B9D7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NantokaStrike</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACAB69292024959DC72761FCB8E0A1F9C4C8DD61</key>
+		<string>github.com:artyamamoto/swift-test02-sample01.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NantokaStrike/NantokaStrike.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACAB69292024959DC72761FCB8E0A1F9C4C8DD61</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:artyamamoto/swift-test02-sample01.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACAB69292024959DC72761FCB8E0A1F9C4C8DD61</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACAB69292024959DC72761FCB8E0A1F9C4C8DD61</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftSamples</string>
+		</dict>
+	</array>
+</dict>
+</plist>

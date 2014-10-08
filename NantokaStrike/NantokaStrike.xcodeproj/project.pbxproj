@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32AFC58419E4D89300A65937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFC58319E4D89300A65937 /* AppDelegate.swift */; };
+		32AFC58619E4D89300A65937 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 32AFC58519E4D89300A65937 /* GameScene.sks */; };
+		32AFC58819E4D89300A65937 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFC58719E4D89300A65937 /* GameScene.swift */; };
+		32AFC58A19E4D89300A65937 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFC58919E4D89300A65937 /* GameViewController.swift */; };
+		32AFC58D19E4D89300A65937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AFC58B19E4D89300A65937 /* Main.storyboard */; };
+		32AFC58F19E4D89300A65937 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AFC58E19E4D89300A65937 /* Images.xcassets */; };
+		32AFC59219E4D89300A65937 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32AFC59019E4D89300A65937 /* LaunchScreen.xib */; };
+		32AFC59E19E4D89300A65937 /* NantokaStrikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFC59D19E4D89300A65937 /* NantokaStrikeTests.swift */; };
+		32AFC5A819E4DE9D00A65937 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AFC5A719E4DE9D00A65937 /* arrow.png */; };
+		32AFC5AA19E4DEB200A65937 /* nantoka.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AFC5A919E4DEB200A65937 /* nantoka.png */; };
+		32AFC5AC19E4E8D600A65937 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AFC5AB19E4E8D600A65937 /* enemy.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32AFC59819E4D89300A65937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32AFC57619E4D89300A65937 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32AFC57D19E4D89300A65937;
+			remoteInfo = NantokaStrike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32AFC57E19E4D89300A65937 /* NantokaStrike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NantokaStrike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AFC58219E4D89300A65937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AFC58319E4D89300A65937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32AFC58519E4D89300A65937 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		32AFC58719E4D89300A65937 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		32AFC58919E4D89300A65937 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		32AFC58C19E4D89300A65937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32AFC58E19E4D89300A65937 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32AFC59119E4D89300A65937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32AFC59719E4D89300A65937 /* NantokaStrikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NantokaStrikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AFC59C19E4D89300A65937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AFC59D19E4D89300A65937 /* NantokaStrikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NantokaStrikeTests.swift; sourceTree = "<group>"; };
+		32AFC5A719E4DE9D00A65937 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		32AFC5A919E4DEB200A65937 /* nantoka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nantoka.png; sourceTree = "<group>"; };
+		32AFC5AB19E4E8D600A65937 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32AFC57B19E4D89300A65937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFC59419E4D89300A65937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32AFC57519E4D89300A65937 = {
+			isa = PBXGroup;
+			children = (
+				32AFC58019E4D89300A65937 /* NantokaStrike */,
+				32AFC59A19E4D89300A65937 /* NantokaStrikeTests */,
+				32AFC57F19E4D89300A65937 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32AFC57F19E4D89300A65937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32AFC57E19E4D89300A65937 /* NantokaStrike.app */,
+				32AFC59719E4D89300A65937 /* NantokaStrikeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32AFC58019E4D89300A65937 /* NantokaStrike */ = {
+			isa = PBXGroup;
+			children = (
+				32AFC58319E4D89300A65937 /* AppDelegate.swift */,
+				32AFC58519E4D89300A65937 /* GameScene.sks */,
+				32AFC58719E4D89300A65937 /* GameScene.swift */,
+				32AFC58919E4D89300A65937 /* GameViewController.swift */,
+				32AFC58B19E4D89300A65937 /* Main.storyboard */,
+				32AFC58E19E4D89300A65937 /* Images.xcassets */,
+				32AFC59019E4D89300A65937 /* LaunchScreen.xib */,
+				32AFC58119E4D89300A65937 /* Supporting Files */,
+			);
+			path = NantokaStrike;
+			sourceTree = "<group>";
+		};
+		32AFC58119E4D89300A65937 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32AFC5AB19E4E8D600A65937 /* enemy.png */,
+				32AFC5A919E4DEB200A65937 /* nantoka.png */,
+				32AFC5A719E4DE9D00A65937 /* arrow.png */,
+				32AFC58219E4D89300A65937 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32AFC59A19E4D89300A65937 /* NantokaStrikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				32AFC59D19E4D89300A65937 /* NantokaStrikeTests.swift */,
+				32AFC59B19E4D89300A65937 /* Supporting Files */,
+			);
+			path = NantokaStrikeTests;
+			sourceTree = "<group>";
+		};
+		32AFC59B19E4D89300A65937 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32AFC59C19E4D89300A65937 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32AFC57D19E4D89300A65937 /* NantokaStrike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AFC5A119E4D89300A65937 /* Build configuration list for PBXNativeTarget "NantokaStrike" */;
+			buildPhases = (
+				32AFC57A19E4D89300A65937 /* Sources */,
+				32AFC57B19E4D89300A65937 /* Frameworks */,
+				32AFC57C19E4D89300A65937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NantokaStrike;
+			productName = NantokaStrike;
+			productReference = 32AFC57E19E4D89300A65937 /* NantokaStrike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32AFC59619E4D89300A65937 /* NantokaStrikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AFC5A419E4D89300A65937 /* Build configuration list for PBXNativeTarget "NantokaStrikeTests" */;
+			buildPhases = (
+				32AFC59319E4D89300A65937 /* Sources */,
+				32AFC59419E4D89300A65937 /* Frameworks */,
+				32AFC59519E4D89300A65937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32AFC59919E4D89300A65937 /* PBXTargetDependency */,
+			);
+			name = NantokaStrikeTests;
+			productName = NantokaStrikeTests;
+			productReference = 32AFC59719E4D89300A65937 /* NantokaStrikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32AFC57619E4D89300A65937 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kazuaki Yamamoto";
+				TargetAttributes = {
+					32AFC57D19E4D89300A65937 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					32AFC59619E4D89300A65937 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 32AFC57D19E4D89300A65937;
+					};
+				};
+			};
+			buildConfigurationList = 32AFC57919E4D89300A65937 /* Build configuration list for PBXProject "NantokaStrike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32AFC57519E4D89300A65937;
+			productRefGroup = 32AFC57F19E4D89300A65937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32AFC57D19E4D89300A65937 /* NantokaStrike */,
+				32AFC59619E4D89300A65937 /* NantokaStrikeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32AFC57C19E4D89300A65937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AFC59219E4D89300A65937 /* LaunchScreen.xib in Resources */,
+				32AFC58F19E4D89300A65937 /* Images.xcassets in Resources */,
+				32AFC5AC19E4E8D600A65937 /* enemy.png in Resources */,
+				32AFC5AA19E4DEB200A65937 /* nantoka.png in Resources */,
+				32AFC58619E4D89300A65937 /* GameScene.sks in Resources */,
+				32AFC5A819E4DE9D00A65937 /* arrow.png in Resources */,
+				32AFC58D19E4D89300A65937 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFC59519E4D89300A65937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32AFC57A19E4D89300A65937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AFC58819E4D89300A65937 /* GameScene.swift in Sources */,
+				32AFC58A19E4D89300A65937 /* GameViewController.swift in Sources */,
+				32AFC58419E4D89300A65937 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFC59319E4D89300A65937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AFC59E19E4D89300A65937 /* NantokaStrikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32AFC59919E4D89300A65937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32AFC57D19E4D89300A65937 /* NantokaStrike */;
+			targetProxy = 32AFC59819E4D89300A65937 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32AFC58B19E4D89300A65937 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32AFC58C19E4D89300A65937 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32AFC59019E4D89300A65937 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32AFC59119E4D89300A65937 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32AFC59F19E4D89300A65937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32AFC5A019E4D89300A65937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32AFC5A219E4D89300A65937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NantokaStrike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32AFC5A319E4D89300A65937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NantokaStrike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32AFC5A519E4D89300A65937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NantokaStrikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NantokaStrike.app/NantokaStrike";
+			};
+			name = Debug;
+		};
+		32AFC5A619E4D89300A65937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NantokaStrikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NantokaStrike.app/NantokaStrike";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32AFC57919E4D89300A65937 /* Build configuration list for PBXProject "NantokaStrike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFC59F19E4D89300A65937 /* Debug */,
+				32AFC5A019E4D89300A65937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AFC5A119E4D89300A65937 /* Build configuration list for PBXNativeTarget "NantokaStrike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFC5A219E4D89300A65937 /* Debug */,
+				32AFC5A319E4D89300A65937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32AFC5A419E4D89300A65937 /* Build configuration list for PBXNativeTarget "NantokaStrikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFC5A519E4D89300A65937 /* Debug */,
+				32AFC5A619E4D89300A65937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32AFC57619E4D89300A65937 /* Project object */;
+}
