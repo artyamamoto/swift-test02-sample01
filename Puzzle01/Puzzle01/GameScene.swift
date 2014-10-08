@@ -65,6 +65,10 @@ class GameScene: SKScene {
     var timer:GameTimer?
     var timerLabel:SKLabelNode?
     
+//    var btnLabel:SKLabelNode?
+//    var btnRect:SKShapeNode?
+    
+    var is_playing:Bool = false
     
     required init(coder aDecoder: NSCoder) {
         //super.init(coder: aDecoder)
@@ -75,7 +79,27 @@ class GameScene: SKScene {
         
         backgroundColor = SKColor(red: 1.0, green:1.0, blue:1.0, alpha:1.0)
         anchorPoint = CGPoint(x: 0, y: 0)
+        
+        
+        var size_:CGSize = CGSize(width: Int(self.size.width) - Int(padding) * 2, height:60)
+        var pos_:CGPoint = CGPoint(x: CGFloat(self.size.width / 2), y: CGFloat(Float(self.size.height) - padding))
+        /*
+        btnRect = SKShapeNode(rectOfSize: size_)
+        btnRect!.fillColor = UIColor(red: 1.0, green: 0.5, blue: 0.5, alpha: 1.0)
+        btnRect!.position = pos_
+        btnRect!.hidden = true
+        self.addChild(btnRect!)
 
+        btnLabel = SKLabelNode(fontNamed:"Chalkduster")
+        btnLabel!.fontSize = 32
+        btnLabel!.position = CGPoint(x:0, y:0)
+        btnLabel!.fontColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        btnLabel!.hidden = true
+        self.addChild(btnLabel!) */
+        
+        is_playing = false
+        
+        
         timer = GameTimer()
 
         timerLabel = SKLabelNode(fontNamed:"Chalkduster")
@@ -85,10 +109,14 @@ class GameScene: SKScene {
         
         self.addChild(timerLabel!)
         
-        
+        start()
+    }
+    func start() {
         timerLabel!.text = timer!.getFormat()
         timer!.start()
         initBlocks()
+        
+        is_playing = true
     }
     
     override func didMoveToView(view: SKView) {
@@ -103,6 +131,31 @@ class GameScene: SKScene {
         drawBlocks()
     }
     func drawBlocks() {
+        //=== ラベル
+        /* if let size_ = self.blockSize {
+            if let timer = timerLabel {
+                var w0 = Float(size_.width)
+                var h0 = Float(size_.height)
+                
+                var x0 = CGFloat(self.size.width / 2)
+                var y0 = CGFloat(Float(timerLabel!.position.y) - padding - 40)
+                
+                // y0 = CGFloat(self.size.height) - y0
+                
+                btnLabel!.position = CGPoint(x: x0, y: y0)
+                btnLabel!.hidden = (is_playing == false)
+                btnRect!.position = CGPoint(x: x0, y: y0 + 30)
+                btnRect!.hidden = (is_playing == false)
+            }
+        }
+        
+        btnLabel!.text = (is_playing ? "" : "CLEAR")
+        */
+        
+        /* if is_playing == false{
+            return
+        } */
+        
         culcSize()
         for (var y=0; y<self.blockSideNum; y++) {
             for (var x=0; x<self.blockSideNum; x++) {
@@ -171,10 +224,6 @@ class GameScene: SKScene {
                 timerLabel!.position = CGPoint(x: x0, y: y0)
             }
         }
-        
-        if let timer_ = timer {
-            timerLabel!.text = timer_.getFormat()
-        }
     }
     func initBlocks() {
         self.blocks = []
@@ -219,10 +268,33 @@ class GameScene: SKScene {
     } */
     
     func didTap(location:CGPoint) {
+        var x = Float(location.x)
+        var y = Float(location.y)
+        
+        if is_playing == false {
+            /* if let rect_ = self.btnRect {
+                var x0 = Float(rect_.position.x)
+                var y0 = Float(rect_.position.y)
+                var x1 = Float(x0 + Float(self.size.width) - padding * 2)
+                var y1 = Float(y0 + 60) //rect_
+                
+                if x0 < x && x < x1 {
+                    if y0 < y && y < y1 {
+                        start()
+                        drawBlocks()
+                        return
+                    }
+                }
+            } */
+            /*
+            start()
+            drawBlocks()
+            return
+*/
+            drawBlocks()
+        }
+        
         if let size_ = self.blockSize {
-            var x = Float(location.x)
-            var y = Float(location.y)
-            
             if x < padding || y < padding {
                 return
             }
@@ -247,9 +319,10 @@ class GameScene: SKScene {
                             self.blocks[idx].checked = true
                             nextNum++
                             
-                            if nextNum >= self.blocks.count {
+                            if nextNum > self.blocks.count {
                                 if let timer_ = timer {
                                     timer_.stop()
+                                    is_playing = false
                                 }
                             }
                         }
@@ -265,6 +338,12 @@ class GameScene: SKScene {
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
-        timerLabel!.text = timer!.getFormat()
+        if let timer_ = timer {
+            var s = timer_.getFormat()
+            if is_playing == false {
+                s += "\nCLEAR"
+            }
+            timerLabel!.text = s
+        }
     }
 }
